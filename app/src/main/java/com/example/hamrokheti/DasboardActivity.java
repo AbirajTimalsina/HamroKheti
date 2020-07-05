@@ -21,8 +21,7 @@ import com.google.android.gms.tasks.Task;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class DasboardActivity extends AppCompatActivity {
-
-
+    
     CircleImageView circleImageView;
     TextView Name, Email;
     Button Btn_Logout;

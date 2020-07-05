@@ -73,7 +73,7 @@ public class LoginActivity extends AppCompatActivity  {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
 
             // Signed in successfully, show authenticated UI.
-           Intent intent = new Intent(LoginActivity.this,DasboardActivity.class);
+           Intent intent = new Intent(LoginActivity.this,MordernDashboardActivity.class);
            startActivity(intent);
 
         } catch (ApiException e) {
@@ -87,7 +87,6 @@ public class LoginActivity extends AppCompatActivity  {
 //    @Override
 //    protected void onStart() {
 //        super.onStart();
-//
 //        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
 //    }
 }
