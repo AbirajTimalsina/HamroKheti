@@ -57,7 +57,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        android:src="@drawable/farm"
+                        android:src="@drawable/farm1"
                         android:layout_width="100dp"
                         android:layout_height="100dp"/>
                     <TextView
@@ -119,9 +119,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        android:src="@drawable/profile"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:src="@drawable/spray"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"/>
                     <TextView
                         android:layout_marginTop="12dp"
                         android:textColor="#000000"
@@ -151,9 +151,9 @@
                     android:layout_height="match_parent">
                     <ImageView
 
-                        android:src="@drawable/profile"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:src="@drawable/eqp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"/>
                     <TextView
                         android:layout_marginTop="12dp"
                         android:textColor="#000000"
@@ -182,14 +182,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        android:src="@drawable/profile"
+                        android:src="@drawable/news"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
                     <TextView
                         android:layout_marginTop="12dp"
                         android:textColor="#000000"
                         android:textSize="18sp"
-                        android:text="समुदाय संग कुराकानी"
+                        android:text="कृषि समाचार"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
