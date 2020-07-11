@@ -11,4 +11,8 @@
         <item name="android:background">@drawable/btn_rounded</item>
     </style>
 
+    <style name="backButton">
+        <item name="android:background">@drawable/btn_back</item>
+    </style>
+
 </resources>

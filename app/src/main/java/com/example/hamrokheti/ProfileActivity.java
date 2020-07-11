@@ -3,6 +3,7 @@ package com.example.hamrokheti;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -20,11 +21,11 @@ import com.google.android.gms.tasks.Task;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class DasboardActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
     
     CircleImageView circleImageView;
     TextView Name, Email;
-    Button Btn_Logout;
+    Button Btn_Logout,Back;
 
     GoogleSignInClient mGoogleSignInClient;
 
@@ -37,6 +38,16 @@ public class DasboardActivity extends AppCompatActivity {
         Name = findViewById(R.id.txt_Name);
         Email = findViewById(R.id.txt_Email);
         Btn_Logout = findViewById(R.id.Btn_Logout);
+        Back = findViewById(R.id.Btn_Back);
+
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfileActivity.this,MordernDashboardActivity.class);
+                startActivity(intent);
+            }
+        });
+
         Btn_Logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,7 +68,6 @@ public class DasboardActivity extends AppCompatActivity {
         if (acct != null) {
             String personName = acct.getDisplayName();
             String personEmail = acct.getEmail();
-//            String personId = acct.getId();
             Uri personPhoto = acct.getPhotoUrl();
 
             Name.setText(personName);
@@ -73,7 +83,7 @@ public class DasboardActivity extends AppCompatActivity {
                 .addOnCompleteListener(this, new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        Toast.makeText(DasboardActivity.this, "Signed out successfully", Toast.LENGTH_LONG).show();
+                        Toast.makeText(ProfileActivity.this, "Signed out successfully", Toast.LENGTH_LONG).show();
                         finish();
                     }
                 });
