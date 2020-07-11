@@ -35,7 +35,7 @@
                 android:textColor="@color/colorWhite"/>
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profileImage"
+                android:id="@+id/Dash_profileImage"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_alignParentRight="true"
@@ -104,9 +104,10 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/wh" />
+                        android:id="@+id/imgWheather"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/grp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -230,7 +231,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        android:id="@+id/profile"
+                        android:id="@+id/imgprofile"
                         android:src="@drawable/profile"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>

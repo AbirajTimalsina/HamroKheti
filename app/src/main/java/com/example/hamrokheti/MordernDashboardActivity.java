@@ -18,10 +18,10 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class MordernDashboardActivity extends AppCompatActivity implements View.OnClickListener{
+public class MordernDashboardActivity extends AppCompatActivity{
     CircleImageView circleImageView;
     TextView name,email;
-    ImageView profile;
+    ImageView imgWheather,ImgProfile;
     GoogleSignInClient mGoogleSignInClient;
 
     @Override
@@ -31,10 +31,33 @@ public class MordernDashboardActivity extends AppCompatActivity implements View.
 
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
-        circleImageView = findViewById(R.id.profileImage);
-        profile = findViewById(R.id.profile);
-        circleImageView.setOnClickListener(this);
-        profile.setOnClickListener(this);
+        circleImageView = findViewById(R.id.Dash_profileImage);
+        ImgProfile = findViewById(R.id.imgprofile);
+        imgWheather = findViewById(R.id.imgWheather);
+
+        imgWheather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MordernDashboardActivity.this,WheatherActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        circleImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MordernDashboardActivity.this,ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImgProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MordernDashboardActivity.this,ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
@@ -51,19 +74,6 @@ public class MordernDashboardActivity extends AppCompatActivity implements View.
             email.setText(personEmail);
             Glide.with(this).load(String.valueOf(personPhoto)).into(circleImageView);
 
-        }
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.profileImage:
-                Intent intent = new Intent(MordernDashboardActivity.this,ProfileActivity.class);
-                startActivity(intent);
-
-            case R.id.profile:
-                Intent intent1 = new Intent(MordernDashboardActivity.this,ProfileActivity.class);
-                startActivity(intent1);
         }
     }
 }
