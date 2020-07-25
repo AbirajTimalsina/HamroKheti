@@ -21,7 +21,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class MordernDashboardActivity extends AppCompatActivity{
     CircleImageView circleImageView;
     TextView name,email;
-    ImageView imgWheather,ImgProfile;
+    ImageView imgWheather,ImgProfile,imgMarket;
     GoogleSignInClient mGoogleSignInClient;
 
     @Override
@@ -34,6 +34,15 @@ public class MordernDashboardActivity extends AppCompatActivity{
         circleImageView = findViewById(R.id.Dash_profileImage);
         ImgProfile = findViewById(R.id.imgprofile);
         imgWheather = findViewById(R.id.imgWheather);
+        imgMarket = findViewById(R.id.imgMarket);
+
+        imgMarket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MordernDashboardActivity.this,CategoryActivity.class);
+                startActivity(intent);
+            }
+        });
 
         imgWheather.setOnClickListener(new View.OnClickListener() {
             @Override
