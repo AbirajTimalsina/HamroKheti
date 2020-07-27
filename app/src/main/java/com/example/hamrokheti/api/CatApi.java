@@ -15,5 +15,6 @@ public interface CatApi {
 
     @GET("productList/productList/{categoryId}")
     Call<List<productList>> getproductList(@Path("categoryId") String categoryId);
+    // getting product list according to category
 
 }
