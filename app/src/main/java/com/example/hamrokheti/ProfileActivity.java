@@ -24,7 +24,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class ProfileActivity extends AppCompatActivity {
     
     CircleImageView circleImageView;
-    TextView Name, Email;
+    TextView Name, Email, sign;
     Button Btn_Logout,Back;
 
     GoogleSignInClient mGoogleSignInClient;
@@ -33,6 +33,11 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dasboard);
+
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
         circleImageView = findViewById(R.id.profile_image);
         Name = findViewById(R.id.txt_Name);
@@ -60,10 +65,6 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build();
-
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
         if (acct != null) {
             String personName = acct.getDisplayName();
@@ -84,6 +85,8 @@ public class ProfileActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         Toast.makeText(ProfileActivity.this, "Signed out successfully", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(ProfileActivity.this,LoginActivity.class);
+                        startActivity(intent);
                         finish();
                     }
                 });

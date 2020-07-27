@@ -1,0 +1,14 @@
+Index: app/src/main/java/com/example/hamrokheti/api/CatApi.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/hamrokheti/api/CatApi.java	(revision fa5660af75a140ed83d47a04a5caba5b55e05e8e)
++++ app/src/main/java/com/example/hamrokheti/api/CatApi.java	(date 1595839494308)
+@@ -15,5 +15,6 @@
+ 
+     @GET("productList/productList/{categoryId}")
+     Call<List<productList>> getproductList(@Path("categoryId") String categoryId);
++    // getting product list according to category
+ 
+ }
