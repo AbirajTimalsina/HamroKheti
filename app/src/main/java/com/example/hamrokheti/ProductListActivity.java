@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 
 import com.example.hamrokheti.adapter.ProductListAdapter;
 import com.example.hamrokheti.api.CatApi;
@@ -30,14 +32,17 @@ public class ProductListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_list);
 
+        String categoryId=getIntent().getStringExtra("category");
+
         StrictModeClass.StrictMode();
         recyclerView = findViewById(R.id.ProductListRecyclerView);
 
         CatApi catApi = getInstance().create(CatApi.class);
-        Call<List<productList>> listCall = catApi.getproductList();
+        Call<List<productList>> listCall = catApi.getproductList(categoryId);
         try {
 
             Response<List<productList>> getproductList = listCall.execute();
+//            Toast.makeText(this, getIntent().getStringExtra("category"), Toast.LENGTH_SHORT).show();
             if (getproductList.isSuccessful()){
                 productLists = getproductList.body();
             }

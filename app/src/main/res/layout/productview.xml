@@ -19,7 +19,7 @@
             android:layout_rowWeight="1"
             app:civ_border_color="#FF000000"
             app:cardElevation="8dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             app:cardCornerRadius="8dp"
             android:background="@color/colorAccent"
             android:layout_margin="18dp">
@@ -52,7 +52,7 @@
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:text="मूल्य"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="80dp"
                     android:layout_marginTop="10dp"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"/>
