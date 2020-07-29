@@ -13,12 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ProductListActivity">
+        <activity android:name=".BugsinfoActivity">
 
         </activity>
-        <activity android:name=".CategoryActivity">
-
-        </activity>
+        <activity android:name=".ProductListActivity"></activity>
+        <activity android:name=".CategoryActivity"></activity>
         <activity android:name=".WheatherActivity" />
         <activity android:name=".MordernDashboardActivity">
             <intent-filter>
@@ -28,9 +27,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".LoginActivity">
-
-        </activity>
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>

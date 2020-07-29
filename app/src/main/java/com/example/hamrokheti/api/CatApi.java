@@ -2,6 +2,7 @@ package com.example.hamrokheti.api;
 
 import java.util.List;
 
+import model.bugsinfo;
 import model.category;
 import model.productList;
 import retrofit2.Call;
@@ -17,4 +18,6 @@ public interface CatApi {
     Call<List<productList>> getproductList(@Path("categoryId") String categoryId);
     // getting product list according to category
 
+    @GET("bugsinfo/all")
+    Call<List<bugsinfo>> getbugsinfo();
 }
