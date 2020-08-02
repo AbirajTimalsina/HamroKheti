@@ -1,6 +1,7 @@
 package com.example.hamrokheti.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.telecom.Call;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.hamrokheti.BugsDetailActivity;
 import com.example.hamrokheti.R;
 import com.squareup.picasso.Picasso;
 
@@ -64,6 +66,15 @@ public class BugsinfoAdapter extends RecyclerView.Adapter<BugsinfoAdapter.Bugsin
 
             img = itemView.findViewById(R.id.imgbugs);
             txtbugsinfo = itemView.findViewById(R.id.txttitle);
+            img.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String bugsinfo = bugsinfoList.get(getAdapterPosition()).get_id();
+                    Intent intent = new Intent(mContext, BugsDetailActivity.class);
+                    intent.putExtra("bugsinfo",bugsinfo);
+                    mContext.startActivity(intent);
+                }
+            });
 
         }
     }

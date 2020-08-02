@@ -2,6 +2,7 @@ package com.example.hamrokheti.api;
 
 import java.util.List;
 
+import model.bugsDetail;
 import model.bugsinfo;
 import model.category;
 import model.productList;
@@ -20,4 +21,7 @@ public interface CatApi {
 
     @GET("bugsinfo/all")
     Call<List<bugsinfo>> getbugsinfo();
+
+    @GET("bugsDetail/bugsDetail/{bugsinfoId}")
+    Call<List<bugsDetail>> getbugsDetail(@Path("bugsinfoId") String bugsinfoId);
 }
