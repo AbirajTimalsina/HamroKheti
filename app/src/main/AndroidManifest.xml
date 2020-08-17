@@ -13,23 +13,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".TechinfoActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".TechDetailActivity"></activity>
+        <activity android:name=".TechinfoActivity"></activity>
         <activity android:name=".BugsDetailActivity" />
         <activity android:name=".BugsinfoActivity" />
         <activity android:name=".ProductListActivity" />
         <activity android:name=".CategoryActivity" />
         <activity android:name=".WheatherActivity" />
         <activity android:name=".MordernDashboardActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>

@@ -6,17 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:layout_width="388dp"-->
-<!--        android:layout_height="696dp"-->
-<!--        app:cardElevation="8dp"-->
-<!--        app:cardCornerRadius="8dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent">-->
-
-
     <ImageView
         android:id="@+id/imgBugdetail"
         android:layout_width="408dp"

@@ -6,6 +6,7 @@ import model.bugsDetail;
 import model.bugsinfo;
 import model.category;
 import model.productList;
+import model.techDetail;
 import model.techinfo;
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -28,4 +29,7 @@ public interface CatApi {
 
     @GET("techinfo/all")
     Call<List<techinfo>> gettechinfo();
+
+    @GET("techDetail/techDetail/{techinfoId}")
+    Call<List<techDetail>> gettechDetail(@Path("techinfoId") String techinfoId);
 }
