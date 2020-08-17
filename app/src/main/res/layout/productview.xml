@@ -41,8 +41,8 @@
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:text="शीर्षक"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
@@ -51,7 +51,7 @@
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:text="मूल्य"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="10dp"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"/>

@@ -73,7 +73,7 @@
                     <ImageView
                         android:id="@+id/imgMarket"
                         android:src="@drawable/farm1"
-                        android:layout_width="100dp"
+                        android:layout_width="fill_parent"
                         android:layout_height="100dp"/>
                     <TextView
                         android:layout_marginTop="10dp"
@@ -106,8 +106,8 @@
 
                     <ImageView
                         android:id="@+id/imgWheather"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
                         android:src="@drawable/grp" />
 
                     <TextView
@@ -140,7 +140,7 @@
                     <ImageView
                         android:id="@+id/Imgspray"
                         android:src="@drawable/spray"
-                        android:layout_width="90dp"
+                        android:layout_width="fill_parent"
                         android:layout_height="90dp"/>
                     <TextView
                         android:layout_marginTop="12dp"
@@ -172,8 +172,8 @@
                     <ImageView
                         android:id="@+id/imgTechinfo"
                         android:src="@drawable/eqp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"/>
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"/>
                     <TextView
                         android:layout_marginTop="12dp"
                         android:textColor="#000000"
@@ -203,8 +203,8 @@
                     android:layout_height="match_parent">
                     <ImageView
                         android:src="@drawable/news"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"/>
                     <TextView
                         android:layout_marginTop="12dp"
                         android:textColor="#000000"
@@ -235,8 +235,8 @@
                     <ImageView
                         android:id="@+id/imgprofile"
                         android:src="@drawable/profile"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"/>
                     <TextView
                         android:layout_marginTop="12dp"
                         android:textColor="#000000"
