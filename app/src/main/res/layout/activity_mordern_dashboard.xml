@@ -172,6 +172,7 @@
                     <ImageView
                         android:id="@+id/imgTechinfo"
                         android:src="@drawable/eqp"
+                        android:scaleType="centerCrop"
                         android:layout_width="fill_parent"
                         android:layout_height="100dp"/>
                     <TextView

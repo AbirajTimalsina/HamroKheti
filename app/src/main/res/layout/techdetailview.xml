@@ -8,8 +8,9 @@
     <ImageView
         android:id="@+id/imgTechdetail"
         android:layout_width="408dp"
-        android:layout_height="147dp"
+        android:layout_height="160dp"
         android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"

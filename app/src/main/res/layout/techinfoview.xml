@@ -33,6 +33,7 @@
                 <ImageView
                     android:id="@+id/imgtech"
                     android:src="@drawable/profile"
+                    android:scaleType="centerCrop"
                     android:layout_width="fill_parent"
                     android:layout_height="135dp" />
                 <TextView
