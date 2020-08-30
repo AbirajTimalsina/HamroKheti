@@ -1,10 +1,12 @@
 package com.example.hamrokheti;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import com.example.hamrokheti.adapter.TechDetailAdapter;
 import com.example.hamrokheti.api.CatApi;
@@ -21,6 +23,7 @@ import retrofit2.Response;
 
 
 public class TechDetailActivity extends AppCompatActivity {
+
 RecyclerView recyclerView;
 List<techDetail>techDetails = new ArrayList<>();
 

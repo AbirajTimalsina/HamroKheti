@@ -203,14 +203,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        android:src="@drawable/news"
+                        android:src="@drawable/gardening"
                         android:layout_width="fill_parent"
                         android:layout_height="100dp"/>
                     <TextView
                         android:layout_marginTop="12dp"
                         android:textColor="#000000"
                         android:textSize="16sp"
-                        android:text="कृषि समाचार"
+                        android:text="मल प्रयोग जानकारी"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
