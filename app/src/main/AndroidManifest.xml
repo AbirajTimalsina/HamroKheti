@@ -13,8 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".TechDetailActivity"></activity>
-        <activity android:name=".TechinfoActivity"></activity>
+        <activity android:name=".LinkActivity"></activity>
+        <activity android:name=".TechDetailActivity" />
+        <activity android:name=".TechinfoActivity" />
         <activity android:name=".BugsDetailActivity" />
         <activity android:name=".BugsinfoActivity" />
         <activity android:name=".ProductListActivity" />
@@ -28,7 +29,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>

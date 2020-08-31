@@ -1,10 +1,13 @@
 package com.example.hamrokheti.api;
 
+import androidx.exifinterface.media.ExifInterface;
+
 import java.util.List;
 
 import model.bugsDetail;
 import model.bugsinfo;
 import model.category;
+import model.link;
 import model.productList;
 import model.techDetail;
 import model.techinfo;
@@ -32,4 +35,7 @@ public interface CatApi {
 
     @GET("techDetail/techDetail/{techinfoId}")
     Call<List<techDetail>> gettechDetail(@Path("techinfoId") String techinfoId);
+
+    @GET("link/all")
+    Call<List<link>> getlink();
 }

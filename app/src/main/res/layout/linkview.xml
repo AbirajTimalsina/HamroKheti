@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <GridLayout
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:civ_border_color="#FF000000"
+            app:cardElevation="8dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="18dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvLinkTitle"
+                    android:textColor="#000000"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:text="तपाईंको प्रोफाइल"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvLinkBody"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:text="तपाईंको प्रोफाइल"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvLink"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:text="तपाईंको प्रोफाइल"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+
+</ScrollView>
