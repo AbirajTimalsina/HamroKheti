@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".LinkActivity"></activity>
+        <activity android:name=".SplashActivity">
+
+        </activity>
+        <activity android:name=".LinkActivity" />
         <activity android:name=".TechDetailActivity" />
         <activity android:name=".TechinfoActivity" />
         <activity android:name=".BugsDetailActivity" />

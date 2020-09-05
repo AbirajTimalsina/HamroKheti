@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <GridLayout
@@ -35,7 +35,7 @@
                     android:src="@drawable/profile"
                     android:scaleType="centerCrop"
                     android:layout_width="fill_parent"
-                    android:layout_height="135dp" />
+                    android:layout_height="165dp" />
                 <TextView
                     android:id="@+id/tvTechTitle"
                     android:textColor="#000000"
