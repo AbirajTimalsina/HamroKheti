@@ -14,11 +14,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".LinkActivity" />
         <activity android:name=".TechDetailActivity" />
@@ -29,7 +25,11 @@
         <activity android:name=".CategoryActivity" />
         <activity android:name=".WheatherActivity" />
         <activity android:name=".MordernDashboardActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LoginActivity" />

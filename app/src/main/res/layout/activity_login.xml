@@ -8,12 +8,22 @@
     android:background="@drawable/iphone_6_7_8_plus__1"
     tools:context=".LoginActivity">
 
+   <TextView
+       android:layout_width="165dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="260dp"
+       android:text="लगइन गर्नुहोस्।"
+       android:textColor="@color/black"
+       android:textSize="25dp"
+       android:textStyle="bold" />
+
    <com.google.android.gms.common.SignInButton
        android:id="@+id/sign_in_button"
        android:layout_width="wrap_content"
+       android:layout_marginTop="20dp"
        android:layout_height="wrap_content"
-       android:layout_marginTop="300dp"
-       android:layout_marginStart="130dp"/>
+       android:layout_gravity="center"/>
 
 </LinearLayout>
 
